@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PERSON1=Trump
+PERSON1=Modi
 PERSON2=Mask
 
 echo "$PERSON1: Hi $PERSON2 How are you doing"
