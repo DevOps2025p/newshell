@@ -8,6 +8,11 @@ else
     echo "Script is running with root user"
 fi
 
-dnf install httpd -y
-systemctl start httpd
-systemctl enable httpd
+dnf install myssaaa -y
+
+if [ $? -ne 0 ]
+then
+    echo "Installation my sql is successful"
+else
+    echo "Installation failed"
+fi
