@@ -10,7 +10,7 @@ fi
 
 dnf install myssaaa -y
 
-if [ $? -ne 0 ]
+if [ $? -eq 0 ]
 then
     echo "Installation my sql is successful"
 else
