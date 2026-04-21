@@ -8,12 +8,21 @@ else
     echo "Script is running with root user"
 fi
 
-dnf install myssaaa -y
+dnf list installed mysql
 
+if [ $? -ne 0 ]
+then
+    echo "MySQL is not installed, installing now"
+    dnf install mysql -y
 if [ $? -eq 0 ]
 then
-    echo "Installation my sql is successful"
+    echo "Installation mysql is successful"
 else
-    echo "Installation failed"
+    echo "installation failed"
     exit 1
 fi
+
+else
+    echo "MySQL is already installed"
+fi
+
