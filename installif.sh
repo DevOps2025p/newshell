@@ -15,4 +15,5 @@ then
     echo "Installation my sql is successful"
 else
     echo "Installation failed"
+    exit 1
 fi
