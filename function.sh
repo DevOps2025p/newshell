@@ -29,7 +29,7 @@ VALIDATE() {
 
 ########MySQL installation
 
-dnf list installed mysql
+dnf list installed mysql &>> $LOG_FILE
 if [ $? -ne 0 ]
 then
     echo "MySQL is not installed, installing now" &>> $LOG_FILE
@@ -42,7 +42,7 @@ fi
 
 ########Python3 installation
 
-dnf list installed python3
+dnf list installed python3 &>> $LOG_FILE
 if [ $? -ne 0 ]
 then
     echo "Python3 is not installed, installing now" &>> $LOG_FILE
