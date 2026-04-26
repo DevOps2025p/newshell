@@ -54,7 +54,7 @@ fi
 
 #########################Nginx installation
 
-dnf list installed nginx
+dnf list installed nginx &>> $LOG_FILE
 if [ $? -ne 0 ]
 then
     echo "Nginx is not installed, installing now" &>> $LOG_FILE
