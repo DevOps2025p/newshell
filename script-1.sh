@@ -1,0 +1,9 @@
+#!bin/bash
+
+Greetings="Hello, Good Morning"
+
+echo $Greetings
+
+echo "PID of the script-1 is $$"
+
+./script-2.sh
